@@ -2,7 +2,6 @@
 let count = 0;
 let counterContainer= document.querySelector('.counter');
 let Btn = document.querySelectorAll(".ctrl-pnl-btn");
-console.log(Btn.dataset);
 counterContainer.innerText=count;
 // functions
 function increment(){

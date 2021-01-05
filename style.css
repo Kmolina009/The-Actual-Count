@@ -1,0 +1,114 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Share:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@1,300&display=swap');
+/* Custom Properties */
+:root{
+    --primary-color:194, 18, 42;
+    --secondary-color:black;
+    --secondary-color-hover:0, 0, 0, 0.363;
+}
+/* Styling */
+body{
+    background-color:rgb(var(--primary-color));
+    /* background-color: rgb(194, 18, 42); */
+    margin:0 auto;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 10px;
+    margin: 0px;
+    width: 400px;
+}
+header{
+    display: flex;
+    margin:0px 30px;
+    font-size: 40px;
+    font-family: 'Share', cursive;
+    font-weight: 700;
+}
+article{
+    display: flex;
+    flex-direction: row;
+    height:250px;
+    width: 400px;
+    border: 5px solid black ;
+    padding: 5px 15px;
+}
+/* ------------------Counter Container--------------------------------- */
+.counter-container{
+    font-family: 'sans-pro',sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:240px;
+    width: 300px;
+    border: 5px solid black ;
+}
+.counter-container>.counter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:170px;
+    width: 300px;
+    border: 5px solid rgba(var(--secondary-color-hover));
+    font-family: 'Share',cursive;
+    font-size: 100px;
+}
+/* ------------------Counter Panel--------------------------------- */
+#counter-panel{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    width: 300px;
+    height: 66px;
+    background-color:var(--secondary-color);
+}
+#counter-panel>.ctrl-pnl-btn{
+    height:60px;
+    width: 60px;
+    font-size: 40px;
+    margin: 5px 10px;
+    background-color:var(--secondary-color);
+    border-radius: 75%;
+    border: 3px solid rgb(var(--primary-color)) ;
+    color: azure;
+    
+}
+#counter-panel>.ctrl-pnl-btn:hover{
+    background-color: rgb(15, 14, 14);
+}
+/* -------------------Counter Subpanel-------------------------------- */
+#counter-panel>#counter-subpanel{
+    height:66px;
+    width: 140px;
+    margin: 0px 0px;
+    padding:2px 0px;
+    background-color: black;
+    border-radius: 5px;
+    border: 0px solid black ;
+    color: azure;
+    
+}
+/* #counter-panel>#counter-subpanel>.ctrl-pnl-btn{
+    background-color: rgb(15, 14, 14);
+} */
+#counter-panel>#counter-subpanel>.ctrl-pnl-btn{
+    font-size: ;
+    height:63px;
+    width: 135px;
+    margin:0px,2px;
+    background-color: rgb(var(--secondary-color));
+    /* border: 2px solid rgb(var(--secondary-color)); */
+    border: 2px solid rgb(var(--primary-color));
+    color: azure;
+    }
+#counter-panel>#counter-subpanel>.ctrl-pnl-btn:hover{
+    background-color: rgb(var(--secondary-color-hover));
+    
+    }
+/* --------------------------------------------------- */
+
+/* @media-query(){
+
+} */
